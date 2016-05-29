@@ -3,7 +3,7 @@
 This is a Heroku buildpack that enables authenticated npm operations
 within a Heroku dyno.
 
-It detects an `NPM_AUTH_TOKEN` environment variable and creates a `.npmrc` file.
+It detects an `PROGRAM_BOT_NPM_TOKEN` environment variable and creates a `.npmrc` file.
 
 It is the soul sister of the [GitHub Buildpack](https://github.com/zeke/github-buildpack).
 
@@ -20,7 +20,7 @@ cat ~/.npmrc | head -1 | sed 's/.*=//g'
 Save the token in your Heroku app config:
 
 ```sh
-heroku config:set GITHUB_AUTH_TOKEN=YOUR_TOKEN_HERE
+heroku config:set PROGRAM_BOT_NPM_TOKEN=YOUR_TOKEN_HERE
 ```
 
 Configure your app to use this buildpack:

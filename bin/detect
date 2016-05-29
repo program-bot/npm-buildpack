@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "zeke/npm-buildpack"
+echo "program-bot/npm-buildpack"
 exit 0
